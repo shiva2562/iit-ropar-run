@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color:#f1f1f1;padding:15px;">
+  <h1>Cultural Events</h1>
+</div>
+
+<div style="overflow:auto">
+
+  <div class="main">
+    <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+<img src="dance.jpg" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Dancing</b></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+<img src="sing.jpg" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Singing</b></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+<img src="movie.jpg" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Movie</b></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+<img src="fine.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Fine Arts</b></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+<img src="drama.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Dramatics</b></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+<img src="awards.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Awards</b></p>
+      </div>
+    </div>
+    
+  </div>
+  </div>
+
+</div>
+
+
+</body>
+</html>

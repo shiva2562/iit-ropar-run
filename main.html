@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('onee.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+
+p{
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+}
+}
+</style>
+</head>
+<body>
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo">
+    <p id="demo"></p>
+  </div>
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    
+    <p><button onclick="document.getElementById('route').style.display='block'" class="w3-button w3-black">route</button></p>
+    <p><button onclick="document.getElementById('schedule').style.display='block'" class="w3-button w3-black">schedule</button></p>
+    <p><button onclick="document.getElementById('registration').style.display='block'" class="w3-button w3-black">registration</button></p>
+    <p><a href="cultural.html"><button class="w3-button w3-black">Cultural Events</button></a></p>
+  </div>
+  <div class="w3-display-bottomleft w3-container">
+    <p class="w3-xlarge">2nd October,2019</p>
+    <p class="w3-large">IIT Ropar</p>
+    <p>Punjab,India</a></p>
+  </div>
+</div>
+
+<div id="route" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('route').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Marathon Route</h1>
+    </div>
+    <div class="w3-container">
+      <b>IIT Ropar Main Campus --> DC Office Crossing --> Ambedkar Chowk --> DC Office T --> DC Office Crossing --> IIT Ropar Main Campus</b>
+
+    </div>
+       <img src="map.png" style="width:100%;" >
+  </div>
+</div>
+
+
+<div id="registration" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('registration').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Registration</h1>
+    </div>
+    <div class= "w3-container">
+      <br>
+      <select>
+  <option value="r">Runner</option>
+  <option value="v">Volunteer</option>
+</select>
+    </div>
+    <div class="w3-container">
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Entry Number" required name="Entry Number"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="Number" placeholder="Contact Number" required name="Contact Number"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="date" placeholder="Date Of Birth" required name="date"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="T-Shirt Size" required name="T-Shirt"></p>
+        <p><button class="w3-button" type="submit"><b>REGISTER</b></button></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="schedule" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('schedule').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Early Registration</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Deadline: <b>31st July,2019</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Registrarion</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Deadline: <b>21st August,2019</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Running Kit Collection Date</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Date: <b>30th September,2019</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Run Date</h1>
+    </div>
+    <div class="w3-container">
+       <h5>Time & Date: <b>6AM,2nd October,2019</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Post Marathon</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Time & Date: <b>9AM,2nd October,2019</b></h5>
+    </div>
+  </div>
+</div>
+
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Oct 2, 2019 06:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
